@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-store';
+  name='isai';
+  age= 21;
+  img='https://source.unsplash.com/random';
 }
