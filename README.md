@@ -12,12 +12,17 @@ Framework de desarrollo en JavaScript creado y soportado por Google.
   
     Verifica versión de Node:    node -v
     Verifica versión de npm:     npm -v
-    Instala el CLI de Angular:   npm -g @angular/cli
+    Instala el CLI de Angular:   npm i -g @angular/cli
     Verifica tu instalación:     ng version
     Crea tu primer proyecto:     ng new my-project
                                     
     Ejecuta el servidor de desarrollo: 
                                     ng serve Dentro de la carpeta de tu proyecto.
+    Lanzar servidor de desarrollo y que abra el navegador automáticamente:ng serve -o
+    Lanzar el servidor en un puerto especifico: ng serve -o --port=3500
+    Kill process : Ctrl C
+    Si lanzamos el comando ng version desde la carpeta del proyecto podremos obtener mayor detalle de las tecnologías utilizadas (Dependencias).
+
 
 ## Platzi Fake Store API :green_heart:
     https://fakeapi.platzi.com/
