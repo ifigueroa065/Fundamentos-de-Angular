@@ -24,5 +24,5 @@ Framework de desarrollo en JavaScript creado y soportado por Google.
     Si lanzamos el comando ng version desde la carpeta del proyecto podremos obtener mayor detalle de las tecnologías utilizadas (Dependencias).
 
 
-## Platzi Fake Store API :green_heart:
-    https://fakeapi.platzi.com/
+## Crear entorno FREE :green_heart:
+    https://stackblitz.com
