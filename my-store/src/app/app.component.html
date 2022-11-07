@@ -20,9 +20,9 @@
 
 <!-- ngFor Objects -->
 <h1>*ngFor Objects</h1>
-<div>
+<div class="products--grid">
   <div *ngFor="let product of products">
-    <img width="150"  height="150" [src]="product.image" alt="image">
+    <img  [src]="product.image" alt="image">
     <h2>{{product.price}}</h2>
     <p>{{product.name}}</p>
   </div>
