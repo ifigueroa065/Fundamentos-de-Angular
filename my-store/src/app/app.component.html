@@ -1,3 +1,23 @@
+<h1>Class & Style</h1>
+<input type="text" required #nameInput3="ngModel" [(ngModel)]="person.name">
+<p class="message-error" [class.invalid]="nameInput3.invalid">El campo es requerido</p>
+<label >Nombre</label>
+<input type="text" required #nameInput4="ngModel" [(ngModel)]="person.name">
+<!-- uso de un if abreviado -->
+<p [style.font-style]="nameInput4.invalid?'italic':'normal'">Texto texto texto</p>
+<div>
+  <div>
+    <input type="text"  [(ngModel)]="widthImg">
+  </div>
+  <div>
+    <!-- se puede cambiar medida a porcentajes o px etc -->
+    <img [style.width.%]="widthImg" [src]="person.avatar" alt="">
+  </div>
+</div>
+
+<hr>
+
+
 <!-- Estructuras de control -->
 
 <!-- ngSwitch -->

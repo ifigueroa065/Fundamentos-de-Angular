@@ -18,7 +18,7 @@ export class AppComponent {
     age: 21,
     avatar:'https://source.unsplash.com/random'
   }
-
+  widthImg=10;
   emojis = [ '😂' , '🐦', '🐳','🌮', '💚']
   newName='';
 
