@@ -32,6 +32,16 @@
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
+.line-error{
+  height: 0;
+  border-bottom: 6px solid;
+  &.invalid{
+    border-color: red;
+  }
+  &.valid{
+    border-color: green;
+  }
+}
 
 @media screen and (min-width: 40em){
   .products--grid{
@@ -68,5 +78,71 @@ div {
       font-family: Arial;
       font-size: 18px;
       padding-bottom: 10px;
+  }
+
+
+}
+
+.form-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: grid;
+  place-content: center;
+  font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  & h1 {
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+}
+
+form {
+  width: 300px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  & label {
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+  & input {
+    border: none;
+    outline: none;
+    height: 24px;
+    border-radius: 10px;
+    padding: 4px 8px;
+    background-color: whitesmoke;
+    caret-color: green;
+    color: rgb(98, 97, 97);
+  }
+}
+button[type="submit"] {
+  background-color: rgb(75, 161, 108);
+  padding: 16px 24px;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &.invalid {
+    background-color: rgb(170, 208, 185);
+  }
+}
+
+.form-error-msg {
+  font-size: 12px;
+  color: red;
+  &.valid {
+    opacity: 0;
+  }
+  &.invalid {
+    opacity: 1;
   }
 }
